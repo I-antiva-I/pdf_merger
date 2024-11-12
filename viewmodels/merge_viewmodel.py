@@ -69,7 +69,7 @@ class MergeViewModel(QObject, IViewModel, metaclass=IViewModelMeta):
         QApplication.restoreOverrideCursor()
 
     def remove_document(self, document_index: int):
-        print(document_index, self.document_item_list)
+        #print(document_index, self.document_item_list)
 
         for document in self.document_item_list[document_index + 1:]:
             document.document_index -= 1
@@ -91,7 +91,7 @@ class MergeViewModel(QObject, IViewModel, metaclass=IViewModelMeta):
 
         pdf_merged = fitz.open()
 
-        print("?X?")
+       # print("?X?")
 
         included_document_items: List[DocumentItem] = list(filter(lambda document: document.document_is_included, self.document_item_list))
         print("IC", included_document_items)
@@ -130,8 +130,15 @@ class MergeViewModel(QObject, IViewModel, metaclass=IViewModelMeta):
         QApplication.restoreOverrideCursor()
 
     def reorder_documents(self, source_index, destination_index):
-        element = self.document_item_list.pop(source_index)
-        self.document_item_list.insert(destination_index, element)
+        print(source_index, destination_index)
+        #for doc in self.document_item_list:
+       #     print(doc.document_name, doc.document_path)
+       # print()
+        element = self.document_item_list.pop(destination_index)
+      #  for doc in self.document_item_list:
+       #     print(doc.document_name, doc.document_path)
+       # print()
+        self.document_item_list.insert(source_index, element)
 
         for doc in self.document_item_list:
             print(doc.document_name, doc.document_path)
