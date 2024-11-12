@@ -16,3 +16,4 @@ class IViewModel(metaclass=IViewModelMeta):
     An interface for `viewmodels`. The interface enforces the implementation of a `model` and 'shared_data'
     properties in derived classes.
     """
+

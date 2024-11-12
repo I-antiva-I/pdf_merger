@@ -23,3 +23,4 @@ class IMinimizableComponent(metaclass=IMinimizableComponentMeta):
     @abstractmethod
     def recommended_minimum_width(self) -> int:
         pass
+
