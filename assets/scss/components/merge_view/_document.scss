@@ -1,0 +1,116 @@
+@use "../../themes.scss";
+
+@mixin document-styles($selected-theme)
+{
+    .document
+    {
+        @include themes.theme-background($selected-theme, color--main-light);
+
+        border: none;
+        border-radius: 4px;
+    
+        &[state="HOVERED"]
+        {
+            @include themes.theme-background($selected-theme, color--accent-positive-medium);
+        }
+    
+        &__index
+        {
+            @include themes.theme-color($selected-theme, color--main-darkest);
+            @include themes.theme-background($selected-theme, color--main-lightest);
+
+            border: none;
+            border-radius: 4px;
+            font: 16px "Roboto";
+            font-weight: medium;
+            qproperty-alignment: "AlignHCenter | AlignVCenter";
+        }
+    
+        &__name
+        {
+            @include themes.theme-color($selected-theme, color--main-darkest);
+            @include themes.theme-background($selected-theme, color--main-lightest);
+
+            border: none;
+            border-radius: 4px; 
+            font: 16px "Roboto";
+            font-weight: medium;
+            qproperty-alignment: "AlignLeft | AlignVCenter";
+        }
+    
+        &__checkbox
+        {   
+            @include themes.theme-color($selected-theme, color--main-darkest);
+            @include themes.theme-background($selected-theme, color--main-lightest);
+
+            border: none;
+            border-radius: 4px; 
+            font: 16px "Roboto";
+            font-weight: medium;
+        }
+    
+        &__button
+        {
+            @include themes.theme-background($selected-theme, color--accent-negative-medium);
+
+            border: none;
+            border-radius: 4px; 
+            font: 16px "Roboto";
+            font-weight: medium;
+    
+            &[state="HOVERED"]
+            {
+                @include themes.theme-background($selected-theme, color--accent-negative-light);
+            }
+    
+            &[state="PRESSED"]
+            {
+                @include themes.theme-background($selected-theme, color--accent-negative-dark);
+            }
+        }
+
+        &__frame
+        {
+            @include themes.theme-background($selected-theme, color--main-medium);
+            @include themes.theme-border-color($selected-theme, color--main-lightest);
+
+            border-radius: 4px;
+            border-style: solid;
+            border-width: 2px;
+            
+        }
+
+        &__preview
+        {
+            border: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+/*
+
+DocumentComponent
+{
+
+}
+
+QScrollArea
+{
+    border: none;
+//border: 2px dashed red;
+   
+}
+QScrollArea QFrame
+{
+ //   border: 2px dashed blue;
+}
+
+
+
+*/

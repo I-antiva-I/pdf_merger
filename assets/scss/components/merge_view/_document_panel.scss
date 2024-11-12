@@ -1,0 +1,19 @@
+@use "../../themes.scss";
+
+@mixin document-panel-styles($selected-theme)
+{
+    .document_panel
+    {
+        &__container
+        {
+            @include themes.theme-background($selected-theme, color--main-darkest);  
+            
+            border: none;
+        }
+        
+        &__scroll_area
+        {    
+            border: none;
+        }
+    }
+}

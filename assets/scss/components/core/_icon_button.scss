@@ -1,0 +1,30 @@
+@use "../../themes.scss";
+
+@mixin icon-button-styles($selected-theme)
+{
+    IconButtonComponent
+    {
+        @include themes.theme-background($selected-theme, color--main-light);
+
+        border: none;
+        border-radius: 4px;
+        font: 16px "Roboto";
+        font-weight: medium;
+    
+        &[state="HOVERED"]
+        {
+            @include themes.theme-background($selected-theme, color--main-lighter);
+        }
+    
+        &[state="PRESSED"]
+        {
+            @include themes.theme-background($selected-theme, color--main-dark);
+        }
+    }
+}
+
+
+
+
+
+

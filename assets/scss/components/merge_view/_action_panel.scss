@@ -1,0 +1,50 @@
+@use "../../themes.scss";
+
+@mixin action-panel-styles($selected-theme)
+{
+    .action_panel
+    {
+        @include themes.theme-background($selected-theme, color--main-darker);
+
+        &__label
+        {
+            @include themes.theme-background($selected-theme, color--main-lightest);
+            @include themes.theme-color($selected-theme, color--main-darkest);
+
+            border: none;
+            border-radius: 4px;
+            font: 16px "Roboto";
+            font-weight: medium;
+            qproperty-alignment: "AlignHCenter | AlignVCenter";
+        }
+
+        &__button
+        {
+            background: #3A854F ;  // 3A854F // 316E46 // 2A7A43 // 267055 // 1B4E3B  // #32926F //#3EB489
+                // 32926F // 
+
+            &[state="HOVERED"]
+            {
+                background: #5FA271;
+            }
+        
+            &[state="PRESSED"]
+            {
+                background: #267055;  // 226E36 // 0C4E1D
+            }
+        }
+
+        &__input
+        {   
+            @include themes.theme-background($selected-theme, color--white);
+            @include themes.theme-color($selected-theme, color--black);
+
+            border-radius: 4px;
+            min-height: 32px;
+            font: 16px "Roboto";
+            padding: 0 4px;
+            font-weight: medium;
+        }
+
+    }
+}

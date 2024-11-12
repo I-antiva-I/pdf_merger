@@ -1,0 +1,76 @@
+@use "mixins";
+@use "themes";
+
+// Components
+@use "components/core/icon_button" as icon-button;
+@use "components/merge_view/document" as document;
+@use "components/merge_view/document_panel" as document-panel;
+@use "components/merge_view/action_panel" as action-panel;
+@use "components/merge_view/control_panel" as control-panel;
+
+@each $theme-name, $theme-map in themes.$themes
+{
+    .theme--#{$theme-name}
+    {
+        $selected-theme: $theme-name;
+
+        MergeView
+        {
+            @include document.document-styles($selected-theme);
+            @include document-panel.document-panel-styles($selected-theme);
+            @include action-panel.action-panel-styles($selected-theme);
+            @include control-panel.control-panel-styles($selected-theme);
+        }
+        
+        @include icon-button.icon-button-styles($selected-theme);
+
+    }
+}
+
+
+
+
+
+
+
+
+// 3E2818 2D190A
+
+.merge_container
+{   
+    padding-top: 12px;  
+    //border: 2px dashed #b20000;
+
+ 
+}
+
+/*
+QGroupBox {
+   // border: 2px dashed #b20000;
+    border-radius: 4px;
+    background: #2D190A;
+    padding: 8px;               # Reduce padding around the content 
+    padding-top: 20px;          # Small padding to account for the title 
+    margin-top: 12px;           # Remove margin to avoid extra space at the top
+    font: 16px "Roboto";
+    font-weight: medium;
+}
+
+QGroupBox::title {
+    background: #FFDEAD;
+    color: #2D190A;
+    padding: 2px 8px;
+    min-height: 24px;
+    subcontrol-origin: margin;          # Align the title with the top border
+    subcontrol-position: top left;
+    top: 0px;                           # Adjust position to avoid clipping and extra space 
+    left: 8px;                          # Adjust for better alignment with content
+    font: 16px "Roboto";
+    font-weight: medium;
+    border-radius: 4px;
+}
+*/
+
+
+
+

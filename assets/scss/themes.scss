@@ -1,0 +1,73 @@
+$themes: (
+    "chocolate": (
+        // Blacks and whites
+        color--black-dark:              #000000,
+        color--black:                   #121212,
+        color--black-light:             #343434,
+        color--white-dark:              #A9A9A9,
+        color--white:                   #F5F5F5,
+        color--white-light:             #FFFFFF,
+
+        // Main colors
+        color--main-darkest:            #2D190A,
+        color--main-darker:             #4D3120,
+        color--main-dark:               #6F4E37,
+        color--main-medium:             #896745,
+        color--main-light:              #A67B5B,
+        color--main-lighter:            #C48E6B,
+        color--main-lightest:           #FFDEAD,
+
+        // Accent (positive)
+        color--accent-positive-dark:    #093F1B,
+        color--accent-positive-medium:  #316E46,
+        color--accent-positive-light:   #73A684,
+
+        // Accent (negative)
+        color--accent-negative-dark:    #800000,
+        color--accent-negative-medium:  #B22222,
+        color--accent-negative-light:   #DC143C,
+    ),
+    "default": (
+        // Blacks and whites
+        color--black-dark:              #000000,
+        color--black:                   #121212,
+        color--black-light:             #343434,
+        color--white-dark:              #A9A9A9,
+        color--white:                   #F5F5F5,
+        color--white-light:             #FFFFFF,
+
+        // Main colors
+        color--main-darkest:            #121212,
+        color--main-darker:             #343434,
+        color--main-dark:               #424242,
+        color--main-medium:             #696969,
+        color--main-light:              #A9A9A9,
+        color--main-lighter:            #C0C0C0,
+        color--main-lightest:           #F5F5F5,
+
+        // Accent (positive)
+        color--accent-positive-dark:    #093F1B,
+        color--accent-positive-medium:  #316E46,
+        color--accent-positive-light:   #73A684,
+
+        // Accent (negative)
+        color--accent-negative-dark:    #800000,
+        color--accent-negative-medium:  #B22222,
+        color--accent-negative-light:   #DC143C,
+    ),
+);
+
+@mixin theme-color($selected-theme, $color-name) 
+{
+    color: map-get(map-get($themes, $selected-theme), $color-name);
+}
+
+@mixin theme-background($selected-theme, $color-name) 
+{
+    background: map-get(map-get($themes, $selected-theme), $color-name);
+}
+
+@mixin theme-border-color($selected-theme, $color-name) 
+{
+    border-color: map-get(map-get($themes, $selected-theme), $color-name);
+}
