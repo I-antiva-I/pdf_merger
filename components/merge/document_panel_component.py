@@ -63,3 +63,5 @@ class DocumentPanelComponent(AdaptivePanelComponent):
         for i in range(source_index, destination_index + 1):
             w: DocumentComponent = self.inner_components[i]
             w.update_document_index(i)
+
+        MessageManager.send(MessageType.MERGE_VIEW__DOCUMENTS_REORDERED, source_index, destination_index)
