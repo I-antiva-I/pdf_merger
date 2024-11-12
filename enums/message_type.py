@@ -1,0 +1,20 @@
+from enum import Enum
+
+
+class MessageType(Enum):
+    DEFAULT = 0                    # NONE
+
+    # MergeView | MergeViewModel
+    PDF_PATHS_SELECTED = 1
+    PDF_PATHS_NONE_SELECTED = 2
+    ADD_DOCUMENT = 3
+    REMOVE_DOCUMENT = 4
+    MERGE_VIEW__DISPLAY_AS_LIST = 5
+    MERGE_VIEW__DISPLAY_AS_GRID = 6
+    MERGE_VIEW__DOCUMENT_REMOVED = 7
+    MERGE_VIEWMODEL__DOCUMENT_REMOVED = 8
+    DOCUMENT_REMOVE_CLICKED = 9
+    ACTION_MERGE_CLICKED = 10
+
+
+
