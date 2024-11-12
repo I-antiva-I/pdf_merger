@@ -56,6 +56,9 @@ class MergeView(QWidget, IView, metaclass=IViewMeta):
         MessageManager.subscribe(MessageType.ACTION_MERGE_CLICKED,
                                  self.viewmodel, self.viewmodel.merge_documents)
 
+        MessageManager.subscribe(MessageType.MERGE_VIEW__DOCUMENTS_REORDERED,
+                                 self.viewmodel, self.viewmodel.reorder_documents)
+
      #   MessageManager.subscribe(MessageType.DOCUMENT_REMOVE_CLICKED, self.viewmodel, self.viewmodel.remove_document)
       #  MessageManager.subscribe(MessageType.DOCUMENT_REMOVE_CLICKED, self, self.remove_document)
      #
