@@ -1,0 +1,291 @@
+/*
+
+DocumentComponent
+{
+
+}
+
+QScrollArea
+{
+    border: none;
+//border: 2px dashed red;
+
+}
+QScrollArea QFrame
+{
+ //   border: 2px dashed blue;
+}
+
+
+
+*/
+.theme--chocolate MergeView .document {
+  background: #A67B5B;
+  border: none;
+  border-radius: 4px;
+}
+.theme--chocolate MergeView .document[state=HOVERED] {
+  background: #316E46;
+}
+.theme--chocolate MergeView .document__index {
+  color: #2D190A;
+  background: #FFDEAD;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignHCenter | AlignVCenter";
+}
+.theme--chocolate MergeView .document__name {
+  color: #2D190A;
+  background: #FFDEAD;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignLeft | AlignVCenter";
+}
+.theme--chocolate MergeView .document__checkbox {
+  color: #2D190A;
+  background: #FFDEAD;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+}
+.theme--chocolate MergeView .document__button {
+  background: #B22222;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+}
+.theme--chocolate MergeView .document__button[state=HOVERED] {
+  background: #DC143C;
+}
+.theme--chocolate MergeView .document__button[state=PRESSED] {
+  background: #800000;
+}
+.theme--chocolate MergeView .document__frame {
+  background: #896745;
+  border-color: #FFDEAD;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+.theme--chocolate MergeView .document__preview {
+  border: none;
+}
+.theme--chocolate MergeView .document_panel__container {
+  background: #2D190A;
+  border: none;
+}
+.theme--chocolate MergeView .document_panel__scroll_area {
+  border: none;
+}
+.theme--chocolate MergeView .action_panel {
+  background: #4D3120;
+}
+.theme--chocolate MergeView .action_panel__label {
+  background: #FFDEAD;
+  color: #2D190A;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignHCenter | AlignVCenter";
+}
+.theme--chocolate MergeView .action_panel__button {
+  background: #3A854F;
+}
+.theme--chocolate MergeView .action_panel__button[state=HOVERED] {
+  background: #5FA271;
+}
+.theme--chocolate MergeView .action_panel__button[state=PRESSED] {
+  background: #267055;
+}
+.theme--chocolate MergeView .action_panel__input {
+  background: #F5F5F5;
+  color: #121212;
+  border-radius: 4px;
+  min-height: 32px;
+  font: 16px "Roboto";
+  padding: 0 4px;
+  font-weight: medium;
+}
+.theme--chocolate MergeView .control_panel {
+  background: #4D3120;
+}
+.theme--chocolate MergeView .control_panel__label_document_number {
+  color: #2D190A;
+  background: #FFDEAD;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignHCenter | AlignVCenter";
+}
+.theme--chocolate IconButtonComponent {
+  background: #A67B5B;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+}
+.theme--chocolate IconButtonComponent[state=HOVERED] {
+  background: #C48E6B;
+}
+.theme--chocolate IconButtonComponent[state=PRESSED] {
+  background: #6F4E37;
+}
+
+.theme--default MergeView .document {
+  background: #A9A9A9;
+  border: none;
+  border-radius: 4px;
+}
+.theme--default MergeView .document[state=HOVERED] {
+  background: #316E46;
+}
+.theme--default MergeView .document__index {
+  color: #121212;
+  background: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignHCenter | AlignVCenter";
+}
+.theme--default MergeView .document__name {
+  color: #121212;
+  background: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignLeft | AlignVCenter";
+}
+.theme--default MergeView .document__checkbox {
+  color: #121212;
+  background: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+}
+.theme--default MergeView .document__button {
+  background: #B22222;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+}
+.theme--default MergeView .document__button[state=HOVERED] {
+  background: #DC143C;
+}
+.theme--default MergeView .document__button[state=PRESSED] {
+  background: #800000;
+}
+.theme--default MergeView .document__frame {
+  background: #696969;
+  border-color: #F5F5F5;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+.theme--default MergeView .document__preview {
+  border: none;
+}
+.theme--default MergeView .document_panel__container {
+  background: #121212;
+  border: none;
+}
+.theme--default MergeView .document_panel__scroll_area {
+  border: none;
+}
+.theme--default MergeView .action_panel {
+  background: #343434;
+}
+.theme--default MergeView .action_panel__label {
+  background: #F5F5F5;
+  color: #121212;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignHCenter | AlignVCenter";
+}
+.theme--default MergeView .action_panel__button {
+  background: #3A854F;
+}
+.theme--default MergeView .action_panel__button[state=HOVERED] {
+  background: #5FA271;
+}
+.theme--default MergeView .action_panel__button[state=PRESSED] {
+  background: #267055;
+}
+.theme--default MergeView .action_panel__input {
+  background: #F5F5F5;
+  color: #121212;
+  border-radius: 4px;
+  min-height: 32px;
+  font: 16px "Roboto";
+  padding: 0 4px;
+  font-weight: medium;
+}
+.theme--default MergeView .control_panel {
+  background: #343434;
+}
+.theme--default MergeView .control_panel__label_document_number {
+  color: #121212;
+  background: #F5F5F5;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+  qproperty-alignment: "AlignHCenter | AlignVCenter";
+}
+.theme--default IconButtonComponent {
+  background: #A9A9A9;
+  border: none;
+  border-radius: 4px;
+  font: 16px "Roboto";
+  font-weight: medium;
+}
+.theme--default IconButtonComponent[state=HOVERED] {
+  background: #C0C0C0;
+}
+.theme--default IconButtonComponent[state=PRESSED] {
+  background: #424242;
+}
+
+.merge_container {
+  padding-top: 12px;
+}
+
+/*
+QGroupBox {
+   // border: 2px dashed #b20000;
+    border-radius: 4px;
+    background: #2D190A;
+    padding: 8px;               # Reduce padding around the content 
+    padding-top: 20px;          # Small padding to account for the title 
+    margin-top: 12px;           # Remove margin to avoid extra space at the top
+    font: 16px "Roboto";
+    font-weight: medium;
+}
+
+QGroupBox::title {
+    background: #FFDEAD;
+    color: #2D190A;
+    padding: 2px 8px;
+    min-height: 24px;
+    subcontrol-origin: margin;          # Align the title with the top border
+    subcontrol-position: top left;
+    top: 0px;                           # Adjust position to avoid clipping and extra space 
+    left: 8px;                          # Adjust for better alignment with content
+    font: 16px "Roboto";
+    font-weight: medium;
+    border-radius: 4px;
+}
+*//*# sourceMappingURL=styles.css.map */
