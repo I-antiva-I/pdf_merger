@@ -1,0 +1,20 @@
+{
+    "example":
+    {
+        "checkbox--checked--border":                "#316E46",
+        "checkbox--checked--background":            "#73A684",
+        "checkbox--checked--indicator":             "#093F1B",
+
+        "checkbox--unchecked--border":              "#4D3120",
+        "checkbox--unchecked--background":          "#6F4E37",
+        "checkbox--unchecked--indicator":           "#6F4E37",
+
+        "icon-button--default--icon":               "#F5F5F5",
+        "icon-button--hovered--icon":               "#F5F5F5",
+        "icon-button--pressed--icon":               "#A9A9A9",
+
+        "icon-button--default--text":               "#F5F5F5",
+        "icon-button--hovered--text":               "#F5F5F5",
+        "icon-button--pressed--text":               "#A9A9A9"
+    }
+}
